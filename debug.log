@@ -1,0 +1,13 @@
+[0327/190933.600:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0327/191222.823:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0328/002820.089:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0328/002820.167:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0328/002820.229:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0328/003007.575:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0328/003007.619:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0328/003007.661:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0328/004551.652:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0328/025925.216:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0328/025925.232:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0328/025925.232:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0328/025925.310:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <!-- custom styles -->
+    <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+    <!-- favicon -->
+    <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!--angular js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/humanize-duration/humanize-duration.js"></script>
+    <script src="bower_components/angular-timer/dist/angular-timer.js"></script>
+
+    <!--controllers js-->
+    <script src="scripts/CamelRaceController.js"></script>
+    <!--services js-->
+    <script src="scripts/services/wordService.js"></script>
+    <script src="scripts/services/camelService.js"></script>
+    <script src="scripts/services/bactrianCamelService.js"></script>
+    <script src="scripts/services/domesticCamelService.js"></script>
+    <script src="scripts/services/dromedaryCamelService.js"></script>
+    <script src="scripts/services/envConfigService.js"></script>
+    <script src="scripts/services/playerService.js"></script>
+</head>
+<body ng-app="CamelRace">
+<div class='container' ng-controller="CamelRaceController">
+    <div class="sky">
+        <div class="playerspane">
+            <playersProgress></playersProgress>
+            <h2>Players States</h2>
+            <div ng-repeat="player in players">
+                <span class="whitetext">{{player.player}} :</span>
+                <progress id="progressbar" max="100" class="whitetext" value="{{ player.position }}"> </progress>
+                <span class="whitetext" id="progressbarlabel">{{ player.position }} %</span>
+            </div>
+        </div>
+        <div class="form">
+            <div ng-show="isHuman();">
+                <h1>Your Turn</h1>
+                <input disabled type="text" class="zocial-dribbble" value="{{randomWord}}">
+                <input type="text" placeholder="Type word" ng-model="userInput" ng-keypress="onTyping($event)">
+                <label disabled class="counter">{{counter.seconds}}</label>
+            </div>
+            <h1 ng-hide="isHuman();"><p>Hold On</p><p>it's</p>PC Turn</h1>
+        </div>
+    </div>
+    <div ng-repeat="player in players">
+        <div class="{{terrianType}}">
+            <img class="camel" src="{{player.image}}" style="position:absolute"
+                 ng-style="{left:player.position < 100 ? player.position +'%' : '94.5%' }" />
+        </div>
+    </div>
+    <div ng-show="weHaveAwinner()" class="gameover">
+        Game Over!
+    </div>
+</div>
+</body>
+</html>

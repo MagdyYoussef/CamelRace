@@ -1,0 +1,241 @@
+body {
+}
+
+.sky {
+    background-image: url(../images/terrain/grass/background4.png);
+    width: 100%;
+    height: 440px;     
+    min-height: 420px;     
+    display:flex;
+}
+.camel {
+    position: relative;
+    bottom: 30px;
+    z-index: 999;
+    left: 1px;
+    top: -35px;
+    height:60px;
+}
+
+.grassLane {
+    background-image: url(../images/terrain/grass/grassLane.png);
+    width: 100%;
+    height: 30px;
+    height: 30px;
+    z-index: 999;
+    position: relative;
+}
+
+.sandLane {
+    background-image: url(../images/terrain/sand/sandLane.png);
+    width: 100%;
+    height: 30px;
+    z-index: 999;
+    position: relative;
+}
+
+.mudLane {
+    background-image: url(../images/terrain/mud/MudLane.jpg);
+    width: 100%;
+    height: 30px;
+    height: 30px;
+    z-index: 999;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+.shown{
+    display:block;
+}  
+.gameover{
+  position:fixed; z-index:100000; left:0; top:0; bottom:0; right:0; background-color:rgba(0,0,0,0.8);
+  animation:gameover 20s linear forwards;
+  font-size:80px; color:white; font-weight:bold; text-align:center; 
+  text-indent:0;  
+  line-height:500px;
+}   
+.whitetext{
+  color: #fff;
+  font-family: Arial;
+
+}
+h1{
+  color: #fff;
+  text-align: center;
+  font-family: Arial;
+  font-weight: normal;
+  margin: 2em auto 0px;
+}
+h2{
+  color: #fff;
+  text-align: center;
+  font-family: Arial;
+  font-weight: normal;
+}
+.inner-screen{
+  width: 800px;
+  height: 340px;
+  background: #1abc9d;
+  margin: 0px auto;
+  padding-top: 80px;
+}
+
+.form{
+  width: 400px;
+  height: 300px;
+  background: #8cc43f;
+  margin: 0px auto;
+  padding-top: 10px; 
+} 
+.playerspane{
+     width: 270px;
+  height: 300px;
+  background: #8cc43f;
+  padding: 7px; 
+}
+input[type="text"]{
+  display: block;
+  width: 309px;
+  height: 35px;
+  margin: 15px auto;
+  background: #fff;
+  border: 0px;
+  padding: 5px;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+input[type="text"]:focus{
+  border: 2px solid #1abc9d
+}
+
+.counter{
+  display: block;
+  background: #005729;
+  width: 30px;
+  padding: 12px; 
+  color: #fff;
+  border: 0px;
+  margin: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s ease;  
+}
+
+input[type="submit"]:hover{
+  background: #09cca6
+}
+
+
+.progress {
+    background-color: #edf1f2;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.progress .progress-bar {
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.progress-loading {
+    width: 100%;
+    transition: opacity 0.6s ease 0s;
+    position: absolute;
+}
+
+.progress-loading-fixed{
+    z-index: 300;
+    position: fixed;
+    top: 0;
+}
+
+.progress-loading .empty-bar, .progress-loading .full-bar{
+    opacity: 0;
+}
+
+.progress-xxs {
+    height: 2px;
+}
+
+.progress-xs {
+    height: 6px;
+}
+
+.progress-sm {
+    height: 12px;
+}
+
+.progress-sm .progress-bar {
+    font-size: 10px;
+    line-height: 1em;
+}
+
+.progress,
+.progress-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress-bar-primary {
+    background-color: #7266ba;
+}
+
+.progress-bar-info {
+    background-color: #23b7e5;
+}
+
+.progress-bar-success {
+    background-color: #27c24c;
+}
+
+.progress-bar-warning {
+    background-color: #fad733;
+}
+
+.progress-bar-danger {
+    background-color: #f05050;
+}
+
+.progress-bar-black {
+    background-color: #1c2b36;
+}
+
+.progress-bar-white {
+    background-color: #fff;
+}
+
+.progress.right .progress-bar {
+    right: 0;
+}
+.progress.vertical {
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+    width: 20px;
+}
+.progress.vertical.bottom {
+    position: relative;
+}
+.progress.vertical .progress-bar {
+    height: 0;
+    transition: height 0.6s ease 0s;
+    width: 100%;
+}
+.progress.vertical.bottom .progress-bar {
+    bottom: 0;
+    position: absolute;
+}
+
+ 
+ 
